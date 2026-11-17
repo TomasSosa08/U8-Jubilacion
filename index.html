@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retirement Check | Smart Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">RETIRE<span>.</span></a>
+        <span class="nav-label">ARGENTINA · RETIREMENT SYSTEM</span>
+    </header>
+
+    <main>
+        <section class="hero">
+
+            <div class="hero-content">
+                <span class="eyebrow">YOUR FUTURE, YOUR NEXT CHAPTER</span>
+
+                <h1>Is it time to <span>retire?</span></h1>
+
+                <p>
+                    Discover if you meet the retirement age requirements
+                    in Argentina with our simple retirement calculator.
+                </p>
+
+                <div class="age-info">
+                    <div class="age-card">
+                        <span class="age-icon">♀</span>
+                        <div>
+                            <strong>60 years</strong>
+                            <small>Women</small>
+                        </div>
+                    </div>
+
+                    <div class="age-card">
+                        <span class="age-icon male">♂</span>
+                        <div>
+                            <strong>65 years</strong>
+                            <small>Men</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calculator">
+                <div class="calculator-header">
+                    <span class="calculator-icon">✦</span>
+                    <div>
+                        <h2>Retirement calculator</h2>
+                        <p>Complete your information below</p>
+                    </div>
+                </div>
+
+                <form id="retirement-form">
+
+                    <div class="form-group">
+                        <label for="name">Full name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Your age</label>
+                        <input
+                            type="number"
+                            id="age"
+                            placeholder="Example: 62"
+                            min="0"
+                            max="120"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gender</label>
+
+                        <div class="gender-options">
+                            <label class="gender-option">
+                                <input type="radio" name="gender" value="mujer" required>
+                                <span>♀ Woman</span>
+                            </label>
+
+                            <label class="gender-option">
+                                <input type="radio" name="gender" value="hombre">
+                                <span>♂ Man</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="calculate-button">
+                        Check my eligibility <span>↗</span>
+                    </button>
+
+                </form>
+
+                <div id="result" class="result hidden" aria-live="polite">
+                    <span id="result-icon"></span>
+                    <h3 id="result-title"></h3>
+                    <p id="result-message"></p>
+                </div>
+
+                <p class="disclaimer">
+                    Based on the general retirement age requirements in Argentina.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="information">
+            <span class="eyebrow">HOW IT WORKS</span>
+            <h2>Two requirements. One simple check.</h2>
+
+            <div class="info-grid">
+                <article class="info-card">
+                    <span>01</span>
+                    <h3>Enter your details</h3>
+                    <p>Tell us your age and select your gender.</p>
+                </article>
+
+                <article class="info-card">
+                    <span>02</span>
+                    <h3>Calculate eligibility</h3>
+                    <p>Our program compares your age with the required retirement age.</p>
+                </article>
+
+                <article class="info-card">
+                    <span>03</span>
+                    <h3>Get your result</h3>
+                    <p>Find out if you have reached the retirement age.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#" class="logo">RETIRE<span>.</span></a>
+        <p>© 2026 Retirement Check. Educational project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
